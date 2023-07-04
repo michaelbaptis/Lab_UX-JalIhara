@@ -14,6 +14,10 @@
     <string name="password_required">Password must be filled</string>
     <string name="username_length">Username length must be more than 5</string>
     <string name="password_length">Password length must be more than 8</string>
+    <string name="app_logo_description">JalIhara Logo</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
 
 
 </resources>
