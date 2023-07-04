@@ -10,39 +10,41 @@
         android:layout_width="111dp"
         android:layout_height="111dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/app_logo" />
+        android:src="@drawable/app_logo"
+        android:contentDescription="@string/app_logo_description"/>
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="300dp"
-        android:layout_height="44dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="48dp"
         android:layout_marginTop="65dp"
         android:background="@drawable/rounded_drawable"
-        android:hint="Username"
+        android:hint="@string/username_hint"
+        android:autofillHints="Username"
+        android:inputType="text"
         android:paddingStart="10dp"
+        android:paddingEnd="90dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:gravity="center_vertical"
         android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="300dp"
-        android:layout_height="44dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_drawable"
-        android:hint="Password"
+        android:hint="@string/password_hint"
+        android:autofillHints="Password"
         android:inputType="textPassword"
         android:paddingStart="10dp"
+        android:paddingEnd="90dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:gravity="center_vertical"
         android:minHeight="48dp" />
 
     <TextView
@@ -61,12 +63,11 @@
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="150dp"
-        android:layout_height="41dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="48dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/rounded_button"
         android:minHeight="48dp"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold" />
