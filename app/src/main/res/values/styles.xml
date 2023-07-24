@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#3E2D4E</item> <!-- Warna teks tab tidak dipilih -->
+    </style>
+
+    <style name="CustomTabTextAppearance.Selected" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#FFFFFF</item> <!-- Warna teks tab dipilih (putih) -->
+    </style>
+
+
+</resources>
+

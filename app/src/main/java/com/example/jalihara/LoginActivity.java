@@ -2,6 +2,7 @@ package com.example.jalihara;
 
 //import android.content.Intent;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -24,9 +25,9 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         tvErrorMessage = findViewById(R.id.tvErrorMessage);
-        Button btnLogin = findViewById(R.id.btnLogin);
+        Button Loginbtn = findViewById(R.id.btnLogin);
 
-        findViewById(R.id.btnLogin).setOnClickListener(view -> {
+        Loginbtn.setOnClickListener(view -> {
             // Mengambil nilai username dan password
             String username = etUsername.getText().toString().trim();
             String password = etPassword.getText().toString().trim();
@@ -58,9 +59,5 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
     }
-
-
-
 }
