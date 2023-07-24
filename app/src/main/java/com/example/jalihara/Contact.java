@@ -21,7 +21,7 @@ public class Contact extends Fragment {
     private TextView messageTextView;
 
     public Contact() {
-        // Required empty public constructor
+
     }
 
     @Override

@@ -29,8 +29,8 @@ public class AboutUsActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         adapter = new TabAdapter(getSupportFragmentManager(), getLifecycle());
 
-        setupAboutUs(); // Initialize About Us section
-        setupContactUs(); // Initialize Contact Us section
+        setupAboutUs();
+        setupContactUs();
     }
 
     private void setupAboutUs() {
