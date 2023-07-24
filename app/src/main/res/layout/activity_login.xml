@@ -10,8 +10,8 @@
         android:layout_width="111dp"
         android:layout_height="111dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/app_logo"
-        android:contentDescription="@string/app_logo_description"/>
+        android:contentDescription="@string/app_logo_description"
+        android:src="@drawable/app_logo" />
 
     <EditText
         android:id="@+id/etUsername"

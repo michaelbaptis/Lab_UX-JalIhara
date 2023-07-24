@@ -13,16 +13,6 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:padding="16dp" />
-    <Button
-        android:id="@+id/btnContactUs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Contact Us" />
 
-    <Button
-        android:id="@+id/btnAboutUs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="About Us" />
 
 </LinearLayout>
