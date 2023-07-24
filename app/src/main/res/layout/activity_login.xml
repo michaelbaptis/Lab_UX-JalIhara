@@ -12,7 +12,7 @@
         android:layout_gravity="center_horizontal"
         android:contentDescription="@string/app_logo_description"
         android:src="@drawable/app_logo" />
-
+<!--test-->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="300dp"
