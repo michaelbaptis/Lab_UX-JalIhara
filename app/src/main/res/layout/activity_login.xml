@@ -68,9 +68,11 @@
         android:background="@drawable/rounded_button"
         android:minHeight="48dp"
         android:text="@string/login"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/text_color_selector"
         android:textSize="16sp"
         android:textStyle="bold" />
+
+
 
 
 

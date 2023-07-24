@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".About">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="290dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:src="@drawable/aboutuspic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About JalIhara"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:paddingTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+             <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JalIhara, established in March 2023, is a mobile\napplication designed to connect art enthusiasts\nwith their favorite performances. With an easy-\nto-use interface, users can explore a wide range\nof artistic genres, purchase tickets seamlessly,\nand receive personalized recommendations\nbased on their preferences."
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JalIhara prioritizes security, ensuring a safe and\nreliable platform for ticket booking. Additionally,\nusers can enjoy exclusive offers and rewards as\nthey continue to engage with the app. Join\nJalIhara today to embark on a captivating\njourney into the world of art."
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Our Strengths"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_marginTop="12dp"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:paddingVertical="10dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="441dp"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:src="@drawable/strength" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:paddingVertical="10dp"
+                android:background="@android:color/white"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet Our Developer"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+
+        <!-- foto developer -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="DEVIN WONG"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="start|center" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/devin" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/hansen" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="HANSEN"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="end|center" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="HASNA S A"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="start|center" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/hasna" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/mike" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="MICHAEL B G"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="end|center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© copyright Jalihara"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:paddingTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -11,18 +11,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JalIhara"
         tools:targetApi="31">
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
 
+        <!-- The main launcher activity -->
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:name=".AboutUsActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Other activities -->
+        <activity
+            android:name="com.example.jalihara.HomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.jalihara.LoginActivity"
+            android:exported="false" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
     </application>
 
