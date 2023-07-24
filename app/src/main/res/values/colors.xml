@@ -16,4 +16,6 @@
     <!-- Warna untuk teks tab -->
     <color name="custom_tab_text_color">#3E2D4E</color>
 
+    <color name="dark_basic">#3E2D4E</color>
+    <color name="light_basic">
 </resources>
