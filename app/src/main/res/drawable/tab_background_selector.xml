@@ -1,0 +1,32 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Tab yang dipilih (active) -->
+    <item android:state_selected="true">
+        <inset xmlns:android="http://schemas.android.com/apk/res/android"
+            android:insetLeft="12dp"
+            android:insetRight="12dp"
+            android:insetTop="8dp"
+            android:insetBottom="8dp">
+            <shape android:shape="rectangle">
+                <solid android:color="#FFFFFF" /> <!-- Warna latar belakang tab yang dipilih (putih) -->
+                <corners android:radius="20dp" /> <!-- Radius untuk membuat background rounded -->
+                <padding android:left="8dp" android:right="8dp" android:top="4dp" android:bottom="4dp" /> <!-- Padding untuk teks -->
+            </shape>
+        </inset>
+    </item>
+
+    <!-- Tab yang tidak dipilih (inactive) -->
+    <item>
+        <inset xmlns:android="http://schemas.android.com/apk/res/android"
+            android:insetLeft="12dp"
+            android:insetRight="12dp"
+            android:insetTop="8dp"
+            android:insetBottom="8dp">
+            <shape android:shape="rectangle">
+                <solid android:color="#3E2D4E" /> <!-- Warna latar belakang tab yang tidak dipilih (ungu) -->
+                <corners android:radius="20dp" /> <!-- Radius untuk membuat background rounded -->
+                <padding android:left="8dp" android:right="8dp" android:top="4dp" android:bottom="4dp" /> <!-- Padding untuk teks -->
+
+            </shape>
+        </inset>
+    </item>
+</selector>
