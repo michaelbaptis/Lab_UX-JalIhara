@@ -8,14 +8,21 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="purple_dark">#2e1e3d</color>
+    <color name="purple_menu">#543969</color>
+    <color name="dark_basic">#3E2D4E</color>
+    <color name="light_basic">#667d4f8e</color>
+
     <color name="about_us_button_pressed">#FFFFFF</color>
     <color name="about_us_button_normal">#3E2D4E</color>
     <color name="contact_us_button_pressed">#FFFFFF</color>
     <color name="contact_us_button_normal">#3E2D4E</color>
 
+    <color name="base">#2E1E3D</color>
+    <color name="grey">#808080</color>
+    <color name="buyBtn">#59517A</color>
+
     <!-- Warna untuk teks tab -->
     <color name="custom_tab_text_color">#3E2D4E</color>
 
-    <color name="dark_basic">#3E2D4E</color>
-    <color name="light_basic"/>
 </resources>

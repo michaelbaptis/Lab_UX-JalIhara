@@ -16,15 +16,16 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="AppTheme.Navbar" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/purple_dark</item>
-        <item name="colorPrimaryVariant">@color/purple_menu</item>
-        <item name="colorOnPrimary">@color/white</item>
-    </style>
 
     <style name="Theme.JalIhara.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyButtonTheme">
+        <item name="colorPrimary">@color/buyBtn</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="Theme.JalIhara.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
