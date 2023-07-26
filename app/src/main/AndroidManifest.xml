@@ -14,7 +14,7 @@
 
         <!-- The main launcher activity -->
         <activity
-            android:name=".AboutUsActivity"
+            android:name=".LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             android:exported="false" />
 
         <activity
-            android:name="com.example.jalihara.LoginActivity"
+            android:name="com.example.jalihara.AboutUsActivity"
             android:exported="false" />
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->

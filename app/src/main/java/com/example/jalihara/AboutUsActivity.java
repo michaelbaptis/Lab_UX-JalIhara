@@ -1,10 +1,15 @@
 package com.example.jalihara;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,6 +68,54 @@ public class AboutUsActivity extends AppCompatActivity {
                 tabLayout.selectTab(tabLayout.getTabAt(position));
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        int id = item.getItemId();
+        String username = getIntent().getStringExtra("username");
+        if (id == R.id.action_settings) {
+//            Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
+//            startActivity(intent);
+            return true;
+        }
+        else if (id == R.id.sub_item1){
+            Intent intent = new Intent(AboutUsActivity.this, HomeActivity.class);
+            intent.putExtra("username", username);
+            startActivity(intent);
+            return true;
+        }
+        else if (id == R.id.sub_item2){
+            Intent intent = new Intent(AboutUsActivity.this, AboutUsActivity.class);
+            intent.putExtra("username", username);
+            startActivity(intent);
+            return true;
+        }
+//        else if (id == R.id.sub_item3){
+//            Intent intent = new Intent(MainActivity.this, devin.class);
+//            startActivity(intent);
+//            return true;
+//        }
+        else if (id == R.id.sub_item4){
+            Intent intent = new Intent(AboutUsActivity.this, LoginActivity.class);
+            intent.putExtra("username", username);
+            startActivity(intent);
+            return true;
+        }
+
+//        switch (item.getItemId()){
+//            case R.id.action_settings:break;
+//
+//            default: return super.onOptionsItemSelected(item);
+//        }
+        return true;
     }
 
     //    contact us
