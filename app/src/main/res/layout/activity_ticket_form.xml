@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_arrow_left_24" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="40dp"
+            android:background="@color/base">
+
+            <!-- Your ticket item layout content here -->
+            <!-- For example, use TextViews to display ticket name and price -->
+
+            <TextView
+                android:id="@+id/ticketNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:text="ticket 1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ticketDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:text="18 July 2023 at International Stadium Jakarta" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/ticketPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Rp 500.000 / ticket"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ticket Form"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18dp"
+                android:textColor="@color/white" />
+            <!-- Buyer name input -->
+            <EditText
+                android:id="@+id/buyerNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer name"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp" />
+            <!-- Ticket quantity input -->
+            <EditText
+                android:id="@+id/quantityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity of Ticket"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booth Type"
+                android:textSize="18dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textColor="@android:color/white"
+                    android:text="Reguler" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textColor="@android:color/white"
+                    android:text="VIP" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textColor="@android:color/white"
+                    android:text="VVIP" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/errorMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/base"
+                android:textStyle="italic"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="0dp"
+                android:text="Error message will be shown here"
+                />
+
+            <!-- Button to buy the ticket -->
+            <Button
+                android:id="@+id/buyButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Buy Ticket"
+                android:theme="@style/MyButtonTheme"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_button"
+
+                android:padding="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

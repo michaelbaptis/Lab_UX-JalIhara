@@ -11,31 +11,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JalIhara"
         tools:targetApi="31">
-
-        <!-- The main launcher activity -->
+        <activity
+            android:name=".TicketFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TicketListActivity"
+            android:exported="false" /> <!-- The main launcher activity -->
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Other activities -->
+        </activity> <!-- Other activities -->
         <activity
-            android:name="com.example.jalihara.HomeActivity"
+            android:name=".HomeActivity"
             android:exported="false" />
-
         <activity
-            android:name="com.example.jalihara.AboutUsActivity"
+            android:name=".AboutUsActivity"
             android:exported="false" />
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
     </application>
 
 </manifest>

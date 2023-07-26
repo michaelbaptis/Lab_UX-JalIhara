@@ -21,7 +21,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    homepage-->
+    <!--    homepage-->
     <string name="trending">Trending</string>
     <string name="recommend">Recommended for you</string>
     <string name="offer">Best Offers</string>
