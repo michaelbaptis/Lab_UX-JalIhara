@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/buyBtn" />
+    <corners android:radius="40dp" /> <!-- Set the border radius in dp (adjust as needed) -->
+</shape>
