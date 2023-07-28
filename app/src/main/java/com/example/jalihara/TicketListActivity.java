@@ -29,11 +29,11 @@ public class TicketListActivity extends AppCompatActivity {
 
         // sample ticket data
         ticketList = new ArrayList<>();
-        ticketList.add(new Ticket("Coldplay", 500000, "18 July 2023 at International Stadium Jakarta", R.drawable.image1));
-        ticketList.add(new Ticket("Niki", 1000000, "18 July 2023 at International Stadium Jakarta", R.drawable.image2));
-        ticketList.add(new Ticket("Dmasiv", 800000, "18 July 2023 at International Stadium Jakarta", R.drawable.image3));
-        ticketList.add(new Ticket("vierratale", 700000, "18 July 2023 at International Stadium Jakarta", R.drawable.image4));
-        ticketList.add(new Ticket("Aldi Taher", 5000000, "18 July 2023 at International Stadium Jakarta", R.drawable.image5));
+        ticketList.add(new Ticket("Coldplay", 5000, "18 July 2023 at International Stadium Jakarta", R.drawable.ticket_1));
+        ticketList.add(new Ticket("Niki", 1000, "18 July 2023 at International Stadium Jakarta", R.drawable.ticket_2));
+        ticketList.add(new Ticket("Dmasiv", 800, "18 July 2023 at International Stadium Jakarta", R.drawable.ticket_3));
+        ticketList.add(new Ticket("vierratale", 700, "18 July 2023 at International Stadium Jakarta", R.drawable.ticket_4));
+        ticketList.add(new Ticket("Aldi Taher", 200, "18 July 2023 at International Stadium Jakarta", R.drawable.ticket_5));
 
         ListView listView = findViewById(R.id.listView);
         TicketAdapter ticketAdapter = new TicketAdapter(this, ticketList);

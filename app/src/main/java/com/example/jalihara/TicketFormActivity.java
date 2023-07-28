@@ -34,7 +34,7 @@ public class TicketFormActivity extends AppCompatActivity {
             TextView ticketPriceTextView = findViewById(R.id.ticketPriceTextView);
 
             ticketNameTextView.setText(selectedTicket.getTitle());
-            ticketPriceTextView.setText(String.format("Rp %.2f", selectedTicket.getPrice()));
+            ticketPriceTextView.setText(String.format("$ %.2f", selectedTicket.getPrice()));
         }
 
         // Find views by their IDs
@@ -109,10 +109,11 @@ public class TicketFormActivity extends AppCompatActivity {
         }
 
         String username = getIntent().getStringExtra("username");
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("username", username);
+        startActivity(intent);
         int base = ContextCompat.getColor(this, R.color.base);
         errorMessageTextView.setTextColor(base);
-        Intent intent = new Intent(TicketFormActivity.this, HomeActivity.class);
-        intent.putExtra("username", username);
         startActivity(intent);
         finish();
     }
