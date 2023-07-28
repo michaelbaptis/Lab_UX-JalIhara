@@ -64,7 +64,9 @@ public class TicketFormActivity extends AppCompatActivity {
     }
 
     private void openTicketListActivity() {
+        String username = getIntent().getStringExtra("username");
         Intent intent = new Intent(this, TicketListActivity.class);
+        intent.putExtra("username", username);
         startActivity(intent);
     }
 
@@ -106,12 +108,11 @@ public class TicketFormActivity extends AppCompatActivity {
             return;
         }
 
-        // Validation successful, hide the error message
-//        errorMessageTextView.setVisibility(View.GONE);
+        String username = getIntent().getStringExtra("username");
         int base = ContextCompat.getColor(this, R.color.base);
         errorMessageTextView.setTextColor(base);
-        // Validation successful, redirect to Home module
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(TicketFormActivity.this, HomeActivity.class);
+        intent.putExtra("username", username);
         startActivity(intent);
         finish();
     }
