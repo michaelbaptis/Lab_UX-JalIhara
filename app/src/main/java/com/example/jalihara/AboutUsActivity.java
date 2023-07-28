@@ -98,11 +98,12 @@ public class AboutUsActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
-//        else if (id == R.id.sub_item3){
-//            Intent intent = new Intent(MainActivity.this, devin.class);
-//            startActivity(intent);
-//            return true;
-//        }
+        else if (id == R.id.sub_item3){
+            Intent intent = new Intent(AboutUsActivity.this, TicketListActivity.class);
+            intent.putExtra("username", username);
+            startActivity(intent);
+            return true;
+        }
         else if (id == R.id.sub_item4){
             Intent intent = new Intent(AboutUsActivity.this, LoginActivity.class);
             intent.putExtra("username", username);
