@@ -51,13 +51,13 @@
             <TextView
                 android:id="@+id/tvUsername"
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:layout_marginTop="20dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:textAlignment="center"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,16 +67,15 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="94dp"
-                android:layout_height="25dp"
                 android:id="@+id/trending"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
                 android:layout_marginStart="34dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/trending"
                 android:textColor="@color/white"
-                />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -101,16 +100,15 @@
             <!--=================================================================-->
 
             <TextView
+                android:id="@+id/recommend"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:id="@+id/recommend"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
-                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
                 android:text="@string/recommend"
-                />
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -231,21 +229,16 @@
             </HorizontalScrollView>
 
 
-
-
-
-
             <TextView
+                android:id="@+id/offer"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:id="@+id/offer"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
-                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
                 android:text="@string/offer"
-                />
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"

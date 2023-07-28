@@ -28,11 +28,12 @@
 
         <!-- Your ticket item layout content here -->
         <!-- For example, use TextViews to display ticket name and price -->
+
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
-            android:alpha="0.4"
+            android:alpha="0.25"
             android:background="@color/grey" />
 
         <TextView
@@ -79,6 +80,7 @@
             android:textSize="22sp"
             android:layout_marginBottom="50dp"
             android:layout_marginLeft="15dp"
+            android:textStyle="bold"
             android:layout_gravity="bottom" />
 
         <Button

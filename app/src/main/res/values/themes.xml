@@ -14,12 +14,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/poppins_semibold</item>
     </style>
 
 
     <style name="Theme.JalIhara.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
     </style>
 
     <style name="MyButtonTheme">
@@ -27,6 +29,7 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">18sp</item>
     </style>
+
 
     <style name="Theme.JalIhara.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
