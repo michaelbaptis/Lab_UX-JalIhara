@@ -58,6 +58,5 @@ public class LoginActivity extends AppCompatActivity {
                 finish(); // Opsional: menutup LoginActivity setelah pindah ke HomeActivity
             }
         });
-
     }
 }

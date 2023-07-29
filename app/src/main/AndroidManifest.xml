@@ -18,7 +18,7 @@
             android:name=".TicketListActivity"
             android:exported="false" /> <!-- The main launcher activity -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".LandingPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +27,18 @@
             </intent-filter>
         </activity> <!-- Other activities -->
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".AboutUsActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

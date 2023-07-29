@@ -14,14 +14,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:fontFamily">@font/montserrat</item>
     </style>
 
 
     <style name="Theme.JalIhara.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:fontFamily">@font/montserrat</item>
     </style>
 
     <style name="MyButtonTheme">

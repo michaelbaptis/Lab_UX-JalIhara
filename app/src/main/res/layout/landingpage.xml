@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:paddingTop="5dp"
+            android:background="@color/base">
+
+            <!-- Your ticket item layout content here -->
+            <!-- For example, use TextViews to display ticket name and price -->
+
+
+            <!-- Button to buy the ticket -->
+
+            <ImageView
+                android:layout_width="107dp"
+                android:layout_height="122dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hi, New User!"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Welcome to our ticketing apps, Jalihara. You can buy ticket with a cheap price."
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/getStarted"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_button"
+                android:padding="5dp"
+                android:text="Get Started"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:theme="@style/MyButtonTheme" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

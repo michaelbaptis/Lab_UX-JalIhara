@@ -108,6 +108,7 @@ public class AboutUsActivity extends AppCompatActivity {
             Intent intent = new Intent(AboutUsActivity.this, LoginActivity.class);
             intent.putExtra("username", username);
             startActivity(intent);
+            finish();
             return true;
         }
 

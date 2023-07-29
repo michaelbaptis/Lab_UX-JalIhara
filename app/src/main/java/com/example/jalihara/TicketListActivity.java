@@ -87,14 +87,10 @@ public class TicketListActivity extends AppCompatActivity {
             Intent intent = new Intent(TicketListActivity.this, LoginActivity.class);
             intent.putExtra("username", username);
             startActivity(intent);
+            finish();
             return true;
         }
 
-//        switch (item.getItemId()){
-//            case R.id.action_settings:break;
-//
-//            default: return super.onOptionsItemSelected(item);
-//        }
         return true;
     }
 
