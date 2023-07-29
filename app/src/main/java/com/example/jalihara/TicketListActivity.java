@@ -21,10 +21,9 @@ public class TicketListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ticket_list);
 
         // sample ticket data
@@ -101,7 +100,7 @@ public class TicketListActivity extends AppCompatActivity {
 
     private void openTicketForm(Ticket ticket) {
         String username = getIntent().getStringExtra("username");
-        Intent intent = new Intent(this, TicketFormActivity.class);
+        Intent intent = new Intent(TicketListActivity.this, HomeActivity.class);
         intent.putExtra("selected_ticket", ticket);
         intent.putExtra("username", username);
         startActivity(intent);

@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class TicketFormActivity extends AppCompatActivity {
 
@@ -24,9 +23,10 @@ public class TicketFormActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
         setContentView(R.layout.activity_ticket_form);
 
-        Intent intent = getIntent();
         Ticket selectedTicket = (Ticket) intent.getSerializableExtra("selected_ticket");
 
         if(selectedTicket!= null) {
@@ -34,7 +34,7 @@ public class TicketFormActivity extends AppCompatActivity {
             TextView ticketPriceTextView = findViewById(R.id.ticketPriceTextView);
 
             ticketNameTextView.setText(selectedTicket.getTitle());
-            ticketPriceTextView.setText(String.format("$ %.2f", selectedTicket.getPrice()));
+            ticketPriceTextView.setText(String.format("Rp %.2f", selectedTicket.getPrice()));
         }
 
         // Find views by their IDs
@@ -65,12 +65,13 @@ public class TicketFormActivity extends AppCompatActivity {
 
     private void openTicketListActivity() {
         String username = getIntent().getStringExtra("username");
-        Intent intent = new Intent(this, TicketListActivity.class);
+        Intent intent = new Intent(TicketFormActivity.this, TicketListActivity.class);
         intent.putExtra("username", username);
         startActivity(intent);
     }
 
     private void validateAndSubmit() {
+
         String customerName = customerNameEditText.getText().toString().trim();
         String quantityStr = quantityEditText.getText().toString().trim();
 
@@ -109,12 +110,10 @@ public class TicketFormActivity extends AppCompatActivity {
         }
 
         String username = getIntent().getStringExtra("username");
-        Intent intent = new Intent(this, HomeActivity.class);
-        intent.putExtra("username", username);
-        startActivity(intent);
         int base = ContextCompat.getColor(this, R.color.base);
         errorMessageTextView.setTextColor(base);
+        Intent intent = new Intent(TicketFormActivity.this, HomeActivity.class);
+        intent.putExtra("username", username);
         startActivity(intent);
-        finish();
     }
 }
