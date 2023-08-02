@@ -17,11 +17,13 @@ import java.util.List;
 public class TicketAdapter extends ArrayAdapter<Ticket> {
     private Context context;
     private List<Ticket> ticketList;
+    private String username;
 
-    public TicketAdapter(Context context, List<Ticket> ticketList) {
+    public TicketAdapter(Context context, List<Ticket> ticketList, String username) {
         super(context, 0, ticketList);
         this.context = context;
         this.ticketList = ticketList;
+        this.username = username;
     }
 
     @Override
@@ -57,8 +59,10 @@ public class TicketAdapter extends ArrayAdapter<Ticket> {
     }
 
     private void openTicketForm(Ticket ticket) {
+//        String username = getIntent().getStringExtra("username");
         Intent intent = new Intent(context, TicketFormActivity.class);
         intent.putExtra("selected_ticket", ticket);
+        intent.putExtra("username", username);
         context.startActivity(intent);
     }
 }
