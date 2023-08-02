@@ -35,7 +35,7 @@ public class TicketListActivity extends AppCompatActivity {
         ticketList.add(new Ticket("Aldi Taher", 200, "18 July 2023 at International Stadium Jakarta", R.drawable.ticket_5));
 
         ListView listView = findViewById(R.id.listView);
-        TicketAdapter ticketAdapter = new TicketAdapter(this, ticketList);
+        TicketAdapter ticketAdapter = new TicketAdapter(this, ticketList, username);
         listView.setAdapter(ticketAdapter);
 //
 //
